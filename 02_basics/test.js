@@ -43,6 +43,7 @@ student_1.email = "happy@google.com"
 
 const myarray = [0,1,2,3,4,5]
 const myHeroes = ["shaktiman", "nagraj"]
+const dcHeroes = ["Batman", "Superman"]
 
 // yaha pe loop sab jada lagane ki zaroorat nahi hai 
 
@@ -61,11 +62,31 @@ const myHeroes = ["shaktiman", "nagraj"]
 
 // SLICE AND SPLICE
 
-console.log("Original array -> " , myarray)
-console.log("Slice applied here ->",myarray.slice(1,3)) 
-console.log("orginal array after slice is performed ->" , myarray)
+// console.log("Original array -> " , myarray)
+// console.log("Slice applied here ->",myarray.slice(1,3)) 
+// console.log("orginal array after slice is performed ->" , myarray)
 
-console.log("Splice applied here ->",myarray.splice(1,3))  // This will split the array into two one half will contain 1,2,3 and the original array will now remain with the left elements
-console.log("orginal array after splice is performed ->" , myarray)
+// console.log("Splice applied here ->",myarray.splice(1,3))  // This will split the array into two one half will contain 1,2,3 and the original array will now remain with the left elements
+// console.log("orginal array after splice is performed ->" , myarray)
 
-// console.log(myarray)
+
+// console.log(myHeroes.concat(dcHeroes))
+// console.log(myHeroes)
+// console.log(dcHeroes)
+
+// Other ways to concat the arrays
+
+// console.log(...dcHeroes,...myHeroes) // 1> this is called spreading the arrays
+
+// const another_array =[1,2,3,4,["Shubham", "Raju" ,"Rajesh",["Hi", "hellow", "by" ,"bye"]], 6] // 2> if arrays have arrays and that arrays have arrays then flat() will concatinate all the element of the specified array to specified  
+// console.log(another_array.flat(Infinity))
+
+
+const a_rray = "Happy Sharma"
+let a = 100
+let b = 200
+let c = 300
+
+// console.log(Array.isArray(a_rray))
+// console.log(Array.of(a,b,c))
+// console.log(Array.from(a_rray))
