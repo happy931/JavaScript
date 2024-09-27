@@ -22,7 +22,7 @@ function calculateCartPrice(...num1){           // ...variable_name isi ko rest 
 // How  to pass object into function and use them 
 
 const user = {
-    username: "Happt Sharma",
+    username: "Happy Sharma",
     price: 999
 }
 
@@ -30,7 +30,49 @@ function handleObject(anyObjectName){
     console.log(`Name of te user is ${anyObjectName.username} and price is ${anyObjectName.price}`)
 }
 
-handleObject(user)   // calling the function must pass the object as argument not any object.
+// handleObject(user)   // calling the function must pass the object as argument not any object.
+
+// **************************************** this and arrow function *****************************************
+
+const _user = { 
+    username :"Happy Sharma",
+    price: 199,
+    welcomeMessage: function(){
+        console.log(`${this.username}, Welcome to website`)
+        // console.log(`${username}, Welcome to website`) his will show error
+    }
+}
+
+// _user.welcomeMessage()
+// _user.username = "Happu Singh"
+// _user.welcomeMessage()
+
+//******************************** */ Declaring arrow function ************************
+
+function chai()
+{
+    let username ="Happy Sharma"
+    console.log(this.username)  // it gives "undefined" as this will not work in functions "this" keyword is for referencing objects only.  
+    console.log(this)  // this can be used in functio as it stores many values one can see all the object values by printing it.
+}
 
 
+const chai_ = function(){
+    console.log("printing the value")
+}
 
+const _chai_ = () => {                      //Explicit arrow function
+    console.log("printing the value")
+}
+
+// _chai_()
+
+const addtwo= (num1, num) => num1+num  // Implicit arrow function, no need to use return keyword
+
+// console.log(addtwo(10,20))
+
+const substracttwo = (num1, num2) => (num1 - num2)        // this braces is important as it helps very much in react, also it helps us to return object  
+const _substracttwo = () => ({username: "Happy Sharma", price: 111})        // () this braces is important as it helps very much in react, also it helps us to return object  
+
+console.log(substracttwo(20,10))
+console.log(_substracttwo())
