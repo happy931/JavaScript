@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colored Tiles</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .tile {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        #tile1 {
+            background-color: black;
+        }
+
+        #tile2 {
+            background-color: blue;
+        }
+
+        #tile3 {
+            background-color: orange;
+            color: black;
+            /* For better contrast */
+        }
+
+        #tile4 {
+            background-color: magenta;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="tile1" class="tile">Tile 1</div>
+    <div id="tile2" class="tile">Tile 2</div>
+    <div id="tile3" class="tile">Tile 3</div>
+    <div id="tile4" class="tile">Tile 4</div>
+</body>
+
+<script src="./main.js"></script>
+
+</html>
