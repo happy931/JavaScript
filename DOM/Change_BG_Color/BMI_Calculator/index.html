@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height and Weight Form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #message {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Height and Weight Form</h2>
+    <form id="myForm">
+        <input type="number" id="height" placeholder="Enter your height (cm)" required>
+        <input type="number" id="weight" placeholder="Enter your weight (kg)" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="message"></div>
+
+    <script src="./main.js"></script>
+
+</body>
+</html>
+
+
+
+
+
